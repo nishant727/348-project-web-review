@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+   <style>
+    table, th, td {
+      border:1px solid black;
+    }
+</style>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A lightweight page with a small backend"
+    />
+
+    <title>Welcome to Boiler Buys, Shopping for Students!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        BB Website Feedback
+      </h1>
+    </header>
+
+    <main>
+
+
+      <button onclick="window.location.href = 'https://boiler-buys-main.glitch.me/'">Return to Main Page</button>
+
+      <p>Enter a review:</p>
+
+      <form>
+        <input
+          name="description"
+          type="text"
+          maxlength="100"
+          placeholder="Description"
+        />
+        <label>
+          Rating:
+        </label>
+        <select name="rating">
+          <option value="1">
+            1
+          </option>
+          <option value="2">
+            2
+          </option>
+          <option value="3">
+            3
+          </option>
+          <option value="4">
+            4
+          </option>
+          <option value="5">
+            5
+          </option>
+        
+        </select>
+        <button type="submit" id="rating-user">Rating</button>
+      </form>
+
+      <table style="width:50%">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody id="rating_table"></tbody>
+      </table>
+            <p>Boiler Buys Statistics</p>
+      <form>
+        <button type="submit" id="search_item">Get Statistics</button>
+      </form>
+
+      <table style="width:50%">
+        <thead>
+          <tr>
+            <th>Number of Ratings</th>
+            <th>Average Rating</th>
+          </tr>
+        </thead>
+        <tbody id="website_stats"></tbody>
+      </table>
+    </main>
+  </body>
+</html>
